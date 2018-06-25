@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header{
+    background: url(../picture/Web.jpg) no-repeat center top /  cover;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.container{
+    margin: 0 auto;
+    width: 1300px;
+
+}
+
+.logo{
+    margin-left: -30px;
+    margin-top: 20px;
+    width: 250px;
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+.menu{
+    margin: 0px;
+    padding: 0;
+    display: block;
+}
+
+.menu li{
+    float: left;
+    display: block;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.menu a{
+    font-family: Arial;
+    color: white; /*#e8a400*/
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color:#eaeaea;
+}
+
+
+.titles-1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 160px;
+    font-family: Arial;
+
+}
+
+.button{
+    background: white;
+    display: block;
+    width: 120px;
+    padding: 15px 0;
+    margin: 0 auto;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 50px;
+
+}
+
+.button a{
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover{
+    border-radius: 10px;
+}
+
+.title h2{
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    color:#313131;
+}
+
+#services{
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+
+.services{
+    margin-top: 50px;
+}
+
+.services_item {
+    width: 280px;
+    float: left;
+    text-align: center;
+}
+
+.services_item h3{
+    font-family: Arial;
+    font-size: 25px;
+    color:#313131;
+}
+
+.services_item p{
+    font-family: Arial;
+    font-size: 15px;
+    color:#555555;
+}
+
+.services_item:last-child{
+    float: right;
+}
+
+.services_item:nth-child(2){
+    margin-left: 140px;
+}
+
+.services_item:nth-child(3){
+    margin-left: 65px;
+}
+
+#services-2{
+
+    padding-bottom:130px ;
+    background: #f2f2f2;
+    padding-top: 20px;
+}
+
+.works img{
+    width: 300px; 
+    float: left;
+}
+
+.works img:last-child{
+    float:right;
+}
+
+.works img:nth-child(2){
+    margin-left: 100px;
+}
+
+footer{
+    padding: 5px;
+    background: #e0e0e0;
+}
+
+.container h5{
+    margin: 0 auto;
+    font-size: 13px;
+    color: #888888;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px){
+
+}
