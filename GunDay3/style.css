@@ -1,0 +1,188 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:0;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+* {
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: repeat-y, repeat-y;
+    background-position: center; 
+    font: 1em Arial,sans-serif;
+    background-image: url("https://st2.depositphotos.com/1036724/5833/i/950/depositphotos_58338033-stock-photo-grungy-gray-background-of-decorative.jpg");
+    color: #000;
+}
+/*https://png.pngtree.com/thumb_back/fw800/back_pic/03/79/69/1057c2dcbb3ebe1.jpg*/
+
+ /* CSS Grid */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.row:after {
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+[class*="span"] {
+    float: left;
+    display: inline;
+    margin-right: 20px;
+}
+
+[class*="span"]:last-child {
+    margin-right: 0;
+    float: right;
+}
+
+.span1  {width: 60px;}
+.span2  {width: 140px;}
+.span3  {width: 220px;}
+.span4  {width: 300px;}
+.span5  {width: 380px;}
+.span6  {width: 460px;}
+.span7  {width: 540px;}
+.span8  {width: 620px;}
+.span9  {width: 700px;}
+.span10 {width: 780px;}
+.span11 {width: 860px;}
+.span12 {width: 940px;}
+
+.offset1  {margin-left: 60px;}
+.offset2  {margin-left: 140px;}
+.offset3  {margin-left: 220px;}
+.offset4  {margin-left: 300px;}
+.offset5  {margin-left: 380px;}
+.offset6  {margin-left: 460px;}
+.offset7  {margin-left: 540px;}
+.offset8  {margin-left: 620px;}
+.offset9  {margin-left: 700px;}
+.offset10 {margin-left: 780px;}
+.offset11 {margin-left: 860px;}
+.offset12 {margin-left: 940px;}
+
+ /* Main */
+
+.header {
+    margin-top: 20px;
+}
+
+.header h1{
+    font-weight: bold;
+    text-shadow: 0 1 rgba(225,225,225,.8);
+}
+
+.search {
+    margin-top: 40px;
+}
+
+.search input {
+    width: 100%;
+    height: 30px;
+}
+
+.slider {
+    height: 250px;
+    background-image: url(C:/Users/Denis/Downloads/VjewS61GH-s.jpg);
+    background-size: cover;
+    box-shadow: 0 5px 5px rgba(0,0,0,2);
+}
+
+.thumb img {
+    box-shadow: 0 5px 5px rgba(0,0,0,2);
+}
+
+.sidebar {
+    padding-top: 30px;
+}
+
+.sidebar nav ul {
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,2);
+    list-style: none;    
+}
+
+.sidebar nav ul li a{
+    text-decoration: none;
+    background: #bbb;
+    color: #eee;
+    display: block;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 1px
+}
+
+.sidebar nav ul li a:hover{
+    background: #aaa;
+}
+
+.content {
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.footer {
+    color:#444;
+    text-align: center;
+    border-top: 1px dashed #888;
+    padding: 40px 0;
+}
+
+@media only screen and (max-width: 939px) {
+    .container {
+        width: 300px;
+    }
+    .span1,  
+    .span2,
+    .span3,
+    .span4,
+    .span5,
+    .span6,
+    .span7,
+    .span8,
+    .span9,
+    .span10,
+    .span11,
+    .span12 {width: 300px;}
+    
+    .sidebar, .thumb {
+        display: none;
+    }
+    
+    .header h1{
+        position: relative;
+        font-weight: normal;
+    }
+    
+    .header h1:after{
+        content: "Mobile";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        font-size: .7em;
+        font-style: italic;
+        color:#666;
+    }
+    
+    .slider {
+        height: 150px;
+        background-image: url("https://www.whistlerretreats.com/wp-content/uploads/2011/07/our-properties-3-360x200.jpg");
+        
+       
+    }
+    
+}
+
