@@ -1,17 +1,29 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 @font-face{
-    font-family:"reg";
-    src: url(fonts/Roboto-Regular.ttf);
-    font-family:"med";
-    src: url(fonts/Roboto-Medium.ttf);
-    font-family:"lig";
-    src: url(fonts/Roboto-Light.ttf);
+    /*font-family:'Rob';
+    src: url('fonts/Roboto-Bold.ttf');*/
+    /*font-family: 'RobI';
+    src: url('fonts/Roboto-Italic.ttf');*/
+    /*font-family: 'RobL';
+    src: url('fonts/Roboto-Light.ttf');*/
+    font-family: 'RobM';
+    src: url('fonts/Roboto-Medium.ttf');
 }
 
+@font-face{
+    font-family: 'RobL';
+    src: url('fonts/Roboto-Light.ttf');
+}
+
+@font-face{
+    font-family:'RobB';
+    src: url('fonts/Roboto-Bold.ttf');
+}
 
 .clearfix:after{
     content: '';
@@ -35,9 +47,12 @@ a{
     /*height: 100vh;*/
     /*padding-bottom: 550px;*/
 }
-
+.menu li a{
+    position: relative;
+}
 
 .menu{
+    
     margin:0 auto;
     max-width: 600px;
     height: 90px;
@@ -55,18 +70,20 @@ a{
 
 .menu a{
     font-weight: 300;
-    font-family: Arial;
-    margin-right: 50px;
+    font-family: 'RobL';
+    margin-right: 40px;
     font-size: 22px;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-
+    
 }
 .menu a:hover{
     color: #dbc200;
     transition: 0.5s ;
 }
+
+
 
 .logo{
 
@@ -82,6 +99,8 @@ a{
     height: 100%;
 }
 
+
+
 #title{
     background: url(../si/img/header-2.jpg) no-repeat center top / cover;
     
@@ -91,7 +110,7 @@ a{
 .caption{
     padding-top: 170px;
     text-align: center;
-    font-family: Arial;
+    font-family: RobB;
     color: white;
 }
 
@@ -107,28 +126,30 @@ a{
     font-weight: 100;
     color: #cbcbcb;
     font-size: 40px;
+    font-family: RobL;
 }
 
 .topic{
     margin-top: 70px;
     font-weight: 100;
-    font-family: sans-serif;
+    font-family: RobB;
     font-size: 20px;
     text-align: center;
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
 .my-flex-container-1{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 }
+
 .my-flex-container-1{
     margin-top: 60px;
     padding-bottom: 20px;
-    font-family: sans-serif;
+    font-family: 'RobM';
 }
 
 .block-1{
@@ -142,6 +163,22 @@ a{
     background: url(../si/img/grup.png) center top / cover;
     height: 320px;
     flex-basis: 40%;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1200px){
+    .block-1 p{
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+.block-2 {
+    display: none;
+}
 }
 
 #title-2{
@@ -150,14 +187,14 @@ a{
 
 .who{
     margin-top: 50px;
-    font-family: sans-serif;
+    font-family: RobB;
     font-size: 25px;
     text-align: center;
 }
 
 
-    @media screen and (min-width: 1300px){
-        .deck {
+    @media screen and (min-width: 950px){
+        .deck, .deck-1 {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -184,7 +221,7 @@ a{
     background: #f7f7f7;
     margin-right: 30px;
     padding: 25px 2px;
- 
+    border-radius: 2px;
 
 }
 
@@ -192,14 +229,14 @@ a{
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    font-family: sans-serif;
+    font-family: RobM;
 }
 
 .card p{
     font-size: 17px;
     text-align: center;
-    font-weight: 400;
-    font-family: sans-serif;
+    font-weight: 600;
+    font-family: RobL;
     padding-top: 5px;
 }
 
@@ -223,7 +260,7 @@ a{
 
 }
 
-.card_byo img{
+/*.card_byo img{
     background: #dbc200;
 
     
@@ -251,7 +288,7 @@ a{
     font-weight: 400;
     font-family: sans-serif;
     padding-top: 5px;
-}
+}*/
 
 .work{
     background: black;
@@ -261,6 +298,7 @@ a{
 .work img{
     width: 100%;
     padding: 0px;
+
 }
 
 .work h5{
@@ -269,7 +307,7 @@ a{
     font-size: 25px;
     text-align: center;
     font-weight: 400;
-    font-family: sans-serif;
+    font-family: RobM;
 }
 
 .work p{
@@ -299,7 +337,7 @@ a{
 .skil{
     margin-top: 60px;
     padding-bottom: 60px;
-    font-family: sans-serif;
+    font-family: RobM;
 }
 
 .whom{
@@ -454,7 +492,7 @@ a{
 footer{
     background: black;
     padding-bottom: 120px;
-    font-family: sans-serif;
+    font-family:RobL;
 }
 
 footer p{
@@ -464,6 +502,56 @@ footer p{
     padding-top: 10px;
 }
 
+#title-4{
+    margin-bottom: 10px;
+}
+
+/*MEDIA ЗАПРОСЫ*/
 
 
+@media screen and (max-width: 1000px){
+    .all{
+        text-align: center;
+        background: black;
+        height: 320px;
+        flex-basis: 23%;
+}
+    
+    footer{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 999px){
+    
+    .work{
+        text-align: center;
+    }
+    .work img{
+        padding-top: 20px; 
+        border-radius: 100%;
+        height: 40%;
+        width: 40%;
+
+    }
+}
+@media screen and (max-width: 800px){
+    .menu a{
+        font-size: 17px;
+    }
+    
+    .logo{   
+        width: 80px;
+        padding: 15px 50px;    
+        float: left;
+
+    }
+
+    .logo img{
+        width: 100px;
+        height: 100%;
+    }
+}
 
