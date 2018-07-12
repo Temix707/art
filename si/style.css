@@ -76,11 +76,14 @@ a{
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    
+    box-sizing: border-box;
 }
 .menu a:hover{
-    color: #dbc200;
-    transition: 0.5s ;
+    color: black;
+    transition: 0.6s ;
+    background: white;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 
@@ -221,15 +224,25 @@ a{
     background: #f7f7f7;
     margin-right: 30px;
     padding: 25px 2px;
-    border-radius: 2px;
-
+    border-radius: 3px;
+    
 }
+
+.card:hover{
+    transition: 0.8s;
+    background: #ededed;    
+}
+
+/*.card img{
+    background: #c3c3c3;
+    
+}*/
 
 .card h4{
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    font-family: RobM;
+    font-family: RobM ;
 }
 
 .card p{
@@ -397,6 +410,10 @@ a{
 
 .word{
 
+}
+
+.pain{
+    color: #dbc200;
 }
 
 .word h8{
